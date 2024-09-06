@@ -3,13 +3,14 @@ package designpatterns.builder;
 public class Driver {
     public static void main(String[] args) {
 
-        PizzaBuilder pizzaBuilder = new PizzaBuilder();
 
-        PizzaDirector pizzaDirector = new PizzaDirector(pizzaBuilder);
+        PizzaDirector pizzaDirector = new PizzaDirector();
 
-        Pizza margheritaNeapolitanPizza = pizzaDirector.buildNeapolitanChipotlePizza();
+        PizzaBuilder pizzaBuilder1 = new PizzaBuilder();
+        Pizza margheritaNeapolitanPizza = pizzaDirector.buildNeapolitanChipotlePizza(pizzaBuilder1);
 
-        Pizza chipotleRomanianPizza = pizzaDirector.buildRomanianMargheritaPizza();
+        PizzaBuilder pizzaBuilder2 = new PizzaBuilder();
+        Pizza chipotleRomanianPizza = pizzaDirector.buildRomanianMargheritaPizza(pizzaBuilder2);
 
     }
 }

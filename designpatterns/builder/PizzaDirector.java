@@ -1,17 +1,12 @@
 package designpatterns.builder;
 
 public class PizzaDirector {
-    private PizzaBuilder pizzaBuilder;
 
-    public PizzaDirector(PizzaBuilder pizzaBuilder) {
-        this.pizzaBuilder = pizzaBuilder;
-    }
-
-    public Pizza buildRomanianMargheritaPizza(){
+    public Pizza buildRomanianMargheritaPizza(PizzaBuilder pizzaBuilder){
         return pizzaBuilder.basil(true).crustType(CrustType.CRUNCHY).build();
     }
 
-    public Pizza buildNeapolitanChipotlePizza(){
+    public Pizza buildNeapolitanChipotlePizza(PizzaBuilder pizzaBuilder){
         return pizzaBuilder.mushroom(true).crustType(CrustType.FLUFFY).build();
     }
 }
