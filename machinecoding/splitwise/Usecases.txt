@@ -1,0 +1,16 @@
+Group
+- Create Group
+- Delete Group
+- Add user to group
+- Remove user from group
+
+Expense
+- Add expense
+- View expense
+- View balance
+- Settleup
+
+Split types
+- Equal Split
+- Unequal Split
+- Percentage Split
