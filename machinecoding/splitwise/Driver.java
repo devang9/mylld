@@ -23,12 +23,12 @@ public class Driver {
             System.out.println("Enter input:");
             Scanner sc = new Scanner(System.in);
             String[] input = sc.nextLine().split(" ");
-             /*First arg = 1 (Add Expense in a group)
+             /* First arg = 1 (Add Expense in a group)
              Example expense input  = 1 ertigacab dchheda EQUAL 15000 dchheda,fkamdar,dhagarg grp1
              Example expense input  = 1 alcohol dhagarg UNEQUAL 10000 dchheda-2000,fkamdar-3000,dhagarg-5000 grp1
              Example expense input  = 1 barbecue dhagarg PERCENT 5000 20-dchheda,30-fkamdar,50-dhagarg grp2
              First arg = 2 (Show all balance of a group)
-             Example showbalances input = 2 grp1*/
+             Example showbalances input = 2 grp1 */
             switch(input[0]) {
                 case "1":
                     String expenseName = input[1];
